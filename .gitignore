@@ -1,8 +1,8 @@
 # Ignore all
 *
 
-# Unignore all with extensions
-!*.*
+# Unignore source files
+!*.cpp
 
 # Unignore Makefile
 !Makefile
