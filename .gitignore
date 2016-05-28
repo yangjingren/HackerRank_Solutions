@@ -1,16 +1,5 @@
-# Ignore all
-*
-
-# Unignore source files
-!*.cpp
-
-# Unignore Makefile
-!Makefile
-
-# Unignore all dirs
-!*/
-
 # Ignore files with extension '.dSYM' & '.DS_Store' & 'tar'
 *.dSYM
 *.DS_Store
 *.tar
+*.txt

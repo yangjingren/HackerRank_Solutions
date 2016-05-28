@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
-  string inputString; // declare a variable to hold input
-  getline(cin, inputString); // get a line of input from cin and save it to variable
+  string inputString; // Declare a variable to hold input.
+  getline(cin, inputString); // Read a line of input into inputString.
 
-  // first line of output
+  // First line of output.
   cout << "Hello, World." << endl;
 
-  // second line of output
+  // Second line of output.
   cout << inputString << endl;
 
   return 0;

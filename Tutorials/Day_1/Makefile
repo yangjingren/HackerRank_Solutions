@@ -8,10 +8,10 @@ DEBUG = -g
 CFLAGS = -Wall $(DEBUG)
 
 # build target executable
-TARGET = HelloWorld
+TARGET = DataTypes
 
 # define the C++ source files
-SRCS = HelloWorld.cpp
+SRCS = $(TARGET).cpp
 
 # define the C object files
 #
