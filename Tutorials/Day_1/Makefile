@@ -33,7 +33,7 @@ clean:
 	$(RM) $(TARGET)
 
 tar:
-	tar cfv $(TARGET).tar $(SRCS) $(TARGET)
+	tar cfv $(TARGET).tar $(SRCS) $(TARGET) Makefile
 
 test:
 	@number=1; while [[ $$number -le $(CASES) ]];	do \

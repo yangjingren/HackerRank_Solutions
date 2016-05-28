@@ -8,10 +8,10 @@ DEBUG = -g
 CFLAGS = -Wall $(DEBUG)
 
 # build target executable
-TARGET = HelloWorld
+TARGET = Conditionals
 
 # define the C++ source files
-SRCS = HelloWorld.cpp
+SRCS = $(TARGET).cpp
 
 # define the C object files
 #
@@ -24,7 +24,7 @@ SRCS = HelloWorld.cpp
 OBJS = $(SRCS.cpp=.o)
 
 # define the number of test cases
-CASES = 1
+CASES = 2
 
 $(TARGET) : $(SRCS)
 	$(CC) $(CFLAGS) $(SRCS) -o $(TARGET)
