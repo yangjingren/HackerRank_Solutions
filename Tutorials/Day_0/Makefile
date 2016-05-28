@@ -1,0 +1,33 @@
+# define the C compiler to use
+CC = g++
+
+# compiler flags:
+# -g    adds debugging information to the executable file
+# -Wall turns on most, but not all, compiler warnings
+DEBUG = -g
+CFLAGS = -Wall $(DEBUG)
+
+# build target executable
+TARGET = HelloWorld
+
+# define the C++ source files
+SRCS = HelloWorld.cpp
+
+# define the C object files
+#
+# This uses Suffix Replacement within a macro:
+# 	$(name:string1=string2)
+#		For each word in 'name' replace 'string1' with 'string2'
+# Below we are replacing the suffix .cpp of all words in the macro SRCS
+# with the .o suffix
+#
+OBJS = $(SRCS.cpp=.o)
+
+$(TARGET) : $(SRCS)
+	$(CC) $(CFLAGS) $(SRCS) -o $(TARGET)
+
+clean:
+	$(RM) $(TARGET)
+
+tar:
+	tar cfv $(TARGET).tar $(SRCS) $(TARGET)

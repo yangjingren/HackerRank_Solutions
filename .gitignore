@@ -1,0 +1,16 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore Makefile
+!Makefile
+
+# Unignore all dirs
+!*/
+
+# Ignore files with extension '.dSYM' & '.DS_Store' & 'tar'
+*.dSYM
+*.DS_Store
+*.tar
